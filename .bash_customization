@@ -12,6 +12,7 @@ alias diff='git diff'
 alias reset='git reset'
 alias checkout='git checkout'
 alias branch='git branch'
+alias log='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s" --all --date=short'
 
 alias build='grunt build'
 alias prebuild='grunt prebuild'
@@ -204,3 +205,4 @@ set_prompts() {
 
 set_prompts
 unset set_prompts
+
